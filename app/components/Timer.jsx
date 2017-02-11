@@ -5,7 +5,7 @@ class Timer extends React.Component {
   render(){
     return(
       <div>
-        <Clock totalSeconds={62} />
+        <Clock />
       </div>
     );
   }

@@ -1,5 +1,7 @@
 import React from 'react'
 
+require('style-loader!css-loader!sass-loader!../css/app.scss');
+
 class Clock extends React.Component {
   constructor(props){
     super(props);
@@ -24,7 +26,6 @@ class Clock extends React.Component {
         <span className="clock-text">
           {this.formatSeconds(totalSeconds)}
         </span>
-        <h1>HOLA</h1>
       </div>
     );
   };
