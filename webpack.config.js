@@ -7,13 +7,12 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jQuery',
-
+    jquery: 'jQuery'
   },
-  plugins: [
+  plugins:[
     new webpack.ProvidePlugin({
-      '$' : 'jquery',
-      'jQuery' : 'jquery'
+      $: "jquery",
+      jQuery: "jquery"
     })
   ],
   output: {
@@ -24,13 +23,10 @@ module.exports = {
     alias: {
       Main: path.resolve(__dirname,'app/components/Main.jsx'),
       Nav: path.resolve(__dirname,'app/components/Nav.jsx'),
-      Weather: path.resolve(__dirname,'app/components/Weather.jsx'),
-      About: path.resolve(__dirname,'app/components/About.jsx'),
-      Examples: path.resolve(__dirname,'app/components/Examples.jsx'),
-      WeatherForm: path.resolve(__dirname,'app/components/WeatherForm.jsx'),
-      WeatherMessage: path.resolve(__dirname,'app/components/WeatherMessage.jsx'),
-      openWeatherMap: path.resolve(__dirname,'app/api/openWeatherMap.jsx'),
-      ErrorModal: path.resolve(__dirname,'app/components/ErrorModal.jsx')
+      Timer: path.resolve(__dirname,'app/components/Timer.jsx'),
+      Countdown: path.resolve(__dirname,'app/components/Countdown.jsx'),
+      Clock: path.resolve(__dirname,'app/components/Clock.jsx'),
+      jQuery: path.resolve(__dirname,'node_modules/jquery/dist/jquery.min.js')
     },
     extensions: ['.js','.jsx'],
   },

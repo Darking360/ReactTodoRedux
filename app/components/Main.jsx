@@ -1,11 +1,15 @@
 import React from 'react'
+import Nav from './Nav'
 
-var Main = (props) => {
-  return(
-    <section>
-      <h3>Main.jsx working</h3>
-    </section>
-  );
+class Main extends React.Component {
+  render(){
+    return(
+      <section>
+        <Nav />
+        {this.props.children}
+      </section>
+    );
+  }
 };
 
 module.exports = Main;
